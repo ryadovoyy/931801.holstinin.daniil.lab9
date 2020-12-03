@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.wrapper {
+  padding: 19px;
+  display: flex;
+  justify-content: start;
+}
+
+.calc {
+  padding: 10px;
+  border: 5px solid rgb(109, 172, 213);
+}
+
+.calc table {
+  border-spacing: 9px;
+}
+
+.calc td {
+  padding: 0;
+}
+
+.calc td[colspan='5'] {
+  padding: 0 10px;
+  max-width: 361px;
+  height: 60px;
+  font-size: 33px;
+  text-align: end;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.calc button {
+  width: 65px;
+  height: 65px;
+  display: block;
+  font-size: 28px;
+}
+
+.calc td[rowspan='2'] button {
+  height: 139px;
+}
+
+.calc td[colspan='2'] button {
+  width: 139px;
+}
